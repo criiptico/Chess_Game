@@ -4,10 +4,12 @@
 
 class chess_pieces: public address{
 public:
-
+    void user1Move();
+    void user2Move();
+    bool validMove();
 
 private:
-
+     
 
 };
 #endif

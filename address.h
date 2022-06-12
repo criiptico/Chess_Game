@@ -1,6 +1,5 @@
 #ifndef ADDRESS_H
 #define ADDRESS_H
-
 class address{
 public:
 
@@ -8,6 +7,6 @@ public:
 private:
 
 
-};
 
+};
 #endif
