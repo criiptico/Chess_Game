@@ -7,6 +7,7 @@ public:
     void user1Move();
     void user2Move();
     bool validMove();
+    address(T{a}, list<int>{0});
 
 private:
      
