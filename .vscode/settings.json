@@ -5,6 +5,8 @@
         "iostream": "cpp",
         "exception": "cpp",
         "xiosbase": "cpp",
-        "xstring": "cpp"
+        "xstring": "cpp",
+        "xmemory": "cpp",
+        "type_traits": "cpp"
     }
 }
