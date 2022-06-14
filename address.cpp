@@ -6,9 +6,9 @@
 //       file = vertical;
 //   }
 
-
-  template <typename T>
-  address::address(T rank, T file){ 
-    horizontal = rank; 
-    vertical = file;
-  }
+// template <typename T>
+address::address(address::rank rank, address::file file)
+{
+  horizontal = rank;
+  vertical = file;
+}
