@@ -1,5 +1,5 @@
-#ifndef CHESS_PIECES_H
-#define CHESS_PIECES_H
+#ifndef CHESS_LOGIC_H
+#define CHESS_LOGIC_H
 #include "address.h"
 //#include "address.cpp"
 

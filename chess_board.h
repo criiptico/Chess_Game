@@ -5,8 +5,8 @@
 
 using namespace std;
 
-template <typename T>
-class chess_containers: public address{
+
+class chess_board: public address{
     public:
 // Containers
             // A single gen alternating between creating white and black
@@ -16,7 +16,7 @@ class chess_containers: public address{
                 //BLACK SPACES -> void container_Bgen();
                 //WHITE SPACES -> void container_Wgen();
             
-        void getBoard_Id();
+        ostream getBoard_Id(ostream& output);
         void container_Update();
             // Need a way to store previous moves for container_Update:
             // - .txt file
@@ -35,13 +35,5 @@ class chess_containers: public address{
 
 // Create cpp file?
 
-
-void container_Gen(){
-    // create and store initial nodes into black & white.
-
-}
-void print_Board(){
-    cout << "testing";
-}
 
 #endif
