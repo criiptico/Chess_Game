@@ -9,15 +9,17 @@ using namespace std;
 class chess_board: public address{
     public:
 // Containers
-            // A single gen alternating between creating white and black
-            // spaces and addresses.
         void container_gen();
+        // A single gen alternating between creating white and black
+            // spaces and addresses.
             // container_gen() will have a:
                 //BLACK SPACES -> void container_Bgen();
                 //WHITE SPACES -> void container_Wgen();
             
-        ostream getBoard_Id(ostream& output);
-        void container_Update();
+        ostream& getBoard_Id(ostream& output);
+        // Line 22 could create the initial containers and update them with 
+        // every move
+        void container_Update(rank, file, piece);
             // Need a way to store previous moves for container_Update:
             // - .txt file
             // - Array
@@ -26,10 +28,10 @@ class chess_board: public address{
 // Print
         void print_Board();
     private:
-        list<address::address> black{};
-        list<address::address> white{};
-        address::address board_Id;
-          
+        list<address> black{};
+        list<address> white{};
+         // What... is this again? Why is this here? Should have doc'd it...
+        //address board_Id;
         
 };
 

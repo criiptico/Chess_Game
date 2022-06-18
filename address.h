@@ -13,6 +13,7 @@ public:
     rank getRank();
     file getFile();
     piece getPiece();
+    
 private:
     rank horizontal;
     file vertical;

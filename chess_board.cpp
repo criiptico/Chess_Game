@@ -5,8 +5,9 @@ void container_Gen(){
     // create and store initial nodes into black & white.
 
 }
-ostream getBoard_Id(ostream& output){
+ostream& getBoard_Id(ostream& output){
     output << address::getRank() << address::getFile();
+    return output;
 }
 void print_Board(){
     cout << "testing";
