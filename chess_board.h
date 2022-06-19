@@ -9,22 +9,25 @@ using namespace std;
 class chess_board: public address{
     public:
 // Containers
-        void container_gen();
+    // Creates start-up containers
+        void container_gen(address container);
         // A single gen alternating between creating white and black
             // spaces and addresses.
             // container_gen() will have a:
                 //BLACK SPACES -> void container_Bgen();
                 //WHITE SPACES -> void container_Wgen();
             
-        ostream& getBoard_Id(ostream& output);
+        ostream& getBoard_Id(ostream& output, address id);
         // Line 22 could create the initial containers and update them with 
         // every move
-        void container_Update(rank, file, piece);
+
+    // Updates containers
+        bool container_Update(rank, file, piece);
             // Need a way to store previous moves for container_Update:
             // - .txt file
             // - Array
             // - Vector
-
+        // chess_board id;
 // Print
         void print_Board();
     private:
@@ -35,7 +38,7 @@ class chess_board: public address{
         
 };
 
-// Create cpp file?
+// Create cpp file? Sure.
 
 
 #endif
