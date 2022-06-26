@@ -9,7 +9,7 @@ public:
     enum file{one, two, three, four, five, six, seven, eight};
     enum piece{Empty, Pawn, Rook, Bishop, Knight, Queen, King};
 
-    address(rank horizontal, file vertical, piece stored_piece);
+    address(rank horizontal=a, file vertical=one, piece stored_piece=Empty);
     rank getRank();
     file getFile();
     piece getPiece();

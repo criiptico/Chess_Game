@@ -31,8 +31,8 @@ class chess_board: public address{
 // Print
         void print_Board();
     private:
-        list<address> black{};
-        list<address> white{};
+        list<address> black[32]{};
+        list<address> white[32]{};
          // What... is this again? Why is this here? Should have doc'd it...
         //address board_Id;
         
