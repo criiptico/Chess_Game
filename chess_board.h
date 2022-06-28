@@ -8,6 +8,8 @@ using namespace std;
 
 class chess_board: public address{
     public:
+        address *w = &white[0];
+        address *b = &black[0];
 // Containers
     // Creates start-up containers
         void container_gen(address container);
@@ -30,15 +32,18 @@ class chess_board: public address{
         // chess_board id;
 // Print
         void print_Board();
+       
     private:
-        list<address> black[32]{};
-        list<address> white[32]{};
-         // What... is this again? Why is this here? Should have doc'd it...
+        // list<address> black[32]{};
+        // list<address> white[32]{};
+        address black[32]{};
+        address white[32]{};
+        //  // What... is this again? Why is this here? Should have doc'd it...
         //address board_Id;
         
 };
 
-// Create cpp file? Sure.
+// Create cpp file? Sure.?
 
 
 #endif

@@ -7,21 +7,16 @@ void container_Gen(address container){
         // 
         // create address -> store id & piece in address
         // -> store address in black or white list
-        bool bw = true;
-        int i{0};
 
+        int i{0};
         do{
-            if(bw == true){
-                list<address> black{i};
-                bw = false;
-            }
-            if(bw == false){
-                address::white{i} = container{0,0,0}; 
-                bw == true;
-            }
+            w = w + i;
+            w{0,0,0}; 
+            b = b + i; 
+            b{0,0,0};
             i++;
         }
-        while(i<64);
+        while(i<32);
 }       
 bool container_Update(address::rank rank, address::file file, address::piece piece){
     
