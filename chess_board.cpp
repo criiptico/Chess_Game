@@ -7,12 +7,16 @@ void container_Gen(address container){
         // 
         // create address -> store id & piece in address
         // -> store address in black or white list
-
+        chess_board containers;
+        address *w = containers.w;
+        address *b = containers.b;
+        address W;
+        address B;
         int i{0};
         do{
             w = w + i;
-            w{0,0,0}; 
-            b = b + i; 
+            W = address(rank a,file one,piece Empty);
+            b = b + i;
             b{0,0,0};
             i++;
         }
