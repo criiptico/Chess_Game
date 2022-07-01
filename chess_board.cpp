@@ -10,14 +10,17 @@ void container_Gen(address container){
         chess_board containers;
         address *w = containers.w;
         address *b = containers.b;
-        address W;
-        address B;
+        address container;
         int i{0};
         do{
+
             w = w + i;
-            W = address(rank a,file one,piece Empty);
+            w& = container(0,0,0);
+            // w& = w(0, 0, 0);
+            
+            
             b = b + i;
-            b{0,0,0};
+            // b{0,0,0};
             i++;
         }
         while(i<32);

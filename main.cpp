@@ -1,7 +1,7 @@
 #include <iostream>
 #include <exception>
 #include "address.h"
-#include "chess_pieces.h"
+#include "chess_logic.h"
 #include "chess_board.h"
 
 using namespace std;
@@ -27,8 +27,8 @@ int main(){
         }
     }
 
-    container_Gen();
-    print_Board();
+    // container_Gen();
+    // print_Board();
 
     
 // Make a random coin program to decide which player goes first?
