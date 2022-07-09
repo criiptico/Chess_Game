@@ -7,7 +7,7 @@ public:
     
     enum rank{a, b, c, d, e, f, g, h};
     enum file{one, two, three, four, five, six, seven, eight};
-    enum piece{Empty, Pawn, Rook, Bishop, Knight, Queen, King};
+    enum piece{Empty, Pawn, Rook, Knight, Bishop, Queen, King};
 
     address(rank horizontal=a, file vertical=one, piece stored_piece=Empty);
     rank getRank();

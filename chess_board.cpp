@@ -12,22 +12,35 @@ void container_Gen(address container){
         address *b = containers.b;
 
         int i{0};
+        bool black = true;
+        bool white = false;
         address::rank r{};
         address::file f{};
         address::piece p{};
-        // Line 19 is the end goal.
+        
+        while(i < 64){
+            
+
+
+
+
+        }
+
+
+
+        // Line 23 is the end goal.
         // w[0] = address::address(r,f,p);
 
         
-        do{
-            w = w + i;
-            *w = address::address(r,f,p);
+        // do{
+        //     w = w + i;
+        //     *w = address::address(r,f,p);
                         
-            b = b + i;
-            *b = address::address(r,f,p);
-            i++;
-        }
-        while(i<32);
+        //     b = b + i;
+        //     *b = address::address(r,f,p);
+        //     i++;
+        // }
+        // while(i<32);
 }       
 bool container_Update(address::rank rank, address::file file, address::piece piece){
     
