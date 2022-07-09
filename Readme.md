@@ -17,3 +17,8 @@
     (I also want to put in that library though, so I need to look that up- well, read through this stackoverflow page I found 
     regarding how to use non-standard libraries in C++: 
     https://stackoverflow.com/questions/10358745/how-to-use-libraries
+    
+ # Chess AI
+    This is something I wish I could implement myself but I'm not completely sure how to do it, so I'll provide a link to someone who
+    already made one- and make sure to look here Chess-AI/src/mcts_network/
+    https://github.com/utk003/Chess-AI/tree/master/src
