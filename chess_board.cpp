@@ -10,17 +10,37 @@ void container_Gen(address container){
         chess_board containers;
         address *w = containers.w;
         address *b = containers.b;
-        address W;
-        address B;
+
         int i{0};
-        do{
-            w = w + i;
-            W = address(rank a,file one,piece Empty);
-            b = b + i;
-            b{0,0,0};
-            i++;
+        bool black = true;
+        bool white = false;
+        address::rank r{};
+        address::file f{};
+        address::piece p{};
+        
+        while(i < 64){
+            
+
+
+
+
         }
-        while(i<32);
+
+
+
+        // Line 23 is the end goal.
+        // w[0] = address::address(r,f,p);
+
+        
+        // do{
+        //     w = w + i;
+        //     *w = address::address(r,f,p);
+                        
+        //     b = b + i;
+        //     *b = address::address(r,f,p);
+        //     i++;
+        // }
+        // while(i<32);
 }       
 bool container_Update(address::rank rank, address::file file, address::piece piece){
     

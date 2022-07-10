@@ -8,7 +8,8 @@ using namespace std;
 
 class chess_board: public address{
     public:
-        address *w = &white[0];
+    // 12,13; black is the same as &black[0]
+        address *w = white;
         address *b = &black[0];
 // Containers
     // Creates start-up containersw
