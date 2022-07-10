@@ -18,13 +18,7 @@ void container_Gen(address container){
         address::file f{};
         address::piece p{};
         
-        while(i < 64){
-            
-
-
-
-
-        }
+        // insert by each rank
 
 
 

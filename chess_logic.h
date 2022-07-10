@@ -5,6 +5,7 @@
 
 class chess_pieces: public address{
 public:
+    //chess_pieces(pieceColor pColor=null);
     void user1Move();
     void user2Move();
     bool validMove();
