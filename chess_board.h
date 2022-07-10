@@ -11,7 +11,7 @@ class chess_board: public address{
         address *w = &white[0];
         address *b = &black[0];
 // Containers
-    // Creates start-up containers
+    // Creates start-up containersw
         void container_gen(address container);
         // A single gen alternating between creating white and black
             // spaces and addresses.
