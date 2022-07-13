@@ -2,7 +2,7 @@
 #include "address.h"
 
 
-address::address(address::rank rank, address::file file, address::piece piece)
+address::address(address::rank rank, address::file file, address::piece piece, pieceColor pColor=null)
 {
   horizontal = rank;
   vertical = file;
