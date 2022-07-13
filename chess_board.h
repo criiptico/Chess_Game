@@ -13,7 +13,7 @@ class chess_board: public address{
         address *b = &black[0];
 // Containers
     // Creates start-up containersw
-        void container_gen(address container);
+        void container_gen();
         // A single gen alternating between creating white and black
             // spaces and addresses.
             // container_gen() will have a:

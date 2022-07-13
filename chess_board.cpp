@@ -1,7 +1,7 @@
 #include <iostream>
 #include "chess_board.h"
 
-void container_Gen(address container){
+void container_Gen(){
     // create and store initial nodes into black & white.
         //
         // 
@@ -23,7 +23,8 @@ void container_Gen(address container){
 
 
 
-
+            r++;
+            i++;
         }
 
 
