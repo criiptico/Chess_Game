@@ -4,8 +4,11 @@
 #include <list>
 #include <array>
 using namespace std;
-class address{
 
+
+////////////////////
+
+class address{
 public:
 
     address(char R, char F); // change rank and file types into a list and set their values the characters 'a', 'b'...etc.
@@ -27,14 +30,13 @@ private:
     piece *piecePtr; // Piece that is in the address of the chess board
 
 };
-
 address(char R, char F){r = R; f = F;}
-
 string getStringLoc(char R, char F){
     string s(2,R,F); // string has a constructor to convert characters into strings. (size, char1, char2...etc)
     return s;    
 }
 
+//////////////////////////
 
 class piece: public address{
     public:
@@ -53,7 +55,7 @@ class piece: public address{
         char boardColor;
 };
 
-
+////////////////////////////////////
 
 class logic: public piece{
     public:
@@ -62,6 +64,9 @@ class logic: public piece{
 
 };
 
+///////////////////////////////
+
+// Storage
 
 list <char> rank[8] = {a = 'a', b = 'b', 'c', 'd', 'e', 'f', 'g', 'h'};
 list <char> file[8];
