@@ -68,8 +68,20 @@ class logic: public piece{
 
 // Storage
 
-list <char> rank[8] = {a = 'a', b = 'b', 'c', 'd', 'e', 'f', 'g', 'h'};
+list <char> rank[8];
 list <char> file[8];
+char ranks{97};
+char files{49};
+
+while(rank == true){
+    rank.pushback(ranks);
+    ranks++;
+}
+
+while(file == true){
+    file.pushback(files);
+    files++;
+}
 
 address squareW[32];
 address squareB[32];
