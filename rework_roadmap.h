@@ -68,26 +68,37 @@ class logic: public piece{
 
 // Storage
 
-list <char> rank[8];
-list <char> file[8];
-char ranks{97};
-char files{49};
+//consider a multilist/multimap?
 
-while(rank == true){
-    rank.pushback(ranks);
-    ranks++;
-}
-
-while(file == true){
-    file.pushback(files);
-    files++;
-}
+list <char> rank{'a','b','c','d','e','f','g','h'};
+list <char> file{'1','2','3','4','5','6','7','8'};
+char ranks{'a'};
+char files{'1'};
 
 address squareW[32];
 address squareB[32];
-squareW = address('a', '1');
 
-squareW.insert(id);
 
+// Line 85 loop is going to be the default set up for addresses. The next thing on the list to do is placing the pieces. I could actually do that 
+// in this same loop. But I'll work on things one at a time and then combine them at the end.
+
+// While loop on line 82 is going to be the maine default function that is going to set the address of each square.
+// Line 87 error? "Expected a declaration" <--- while loop
+while(ranks <= 'h'){
+    while(files <= '8'){
+        if ((squareB % 2) == 0){
+        squareB.insert(address(ranks, files))
+        squareB = squareB + 1;
+        }
+        else{
+        squareW.insert(address(ranks, files))
+        squareW = squareW + 1;
+        }
+        // is this needed, redundant? ---> if(files == '8'){break;}
+        files++;
+    }
+    ranks++;
+}
+///////////////////////
 
 #endif
